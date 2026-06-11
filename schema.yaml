@@ -6,7 +6,7 @@ meraki:
   domains: list(include('domains'), required=False)
   template: include('template', required=False)
 domains:
-  name: str(min=1, max=128)
+  name: str(min=1, max=10)
   url: str(min=1, max=255, required=False)
   administrator: include('administrator', required=False)
   organizations: list(include('organizations'))
